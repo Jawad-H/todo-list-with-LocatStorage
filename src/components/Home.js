@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react'
 import styled from "styled-components";
 import { BsFillTrashFill } from "react-icons/bs";
 function Home() {
+    const [list, setlist, deleteElement, addTolocalStorage, input, setInput] = useHook();
 
     const [list, setlist] = useState([]);
     const [input, setInput] = useState("");
